@@ -1,0 +1,15 @@
+// this line tells the code to inclued all the special instructions listed i
+#include"MMSP.hpp"
+// this line tells the compiler to read commands from the MMSP library
+using namespace MMSP;
+ 
+//here we define the function "main" that can be called with 
+int main(int argc, char* argv[])
+{
+//This initializizes the arguements stated when calling the function main
+  MMSP::Init(argc,argv);
+//This calls an arguement from the standard library (std::) in this case the
+  std::cout<<"Hello MMSP!"<<std::endl;
+//This ends and MMSP function.  The MMSP:: clarifyier is unnessary, it is on
+  MMSP::Finalize();
+}
